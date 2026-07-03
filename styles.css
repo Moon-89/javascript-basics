@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f7f8fb;
+  color: #1f2937;
+}
+
+header, footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #1e40af;
+  color: white;
+}
+
+main {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.controls, .todo-input, .quiz-buttons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+#countValue {
+  min-width: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#todoList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+#todoList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+#todoList li.completed span {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+#quizAnswers {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
