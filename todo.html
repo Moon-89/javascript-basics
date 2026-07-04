@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do · JS Mini Apps Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <span class="badge">Demo 2</span>
+    <h1>To-Do List</h1>
+    <p>Add, filter and manage tasks — saved in your browser with localStorage.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="counter.html">Counter</a>
+    <a href="todo.html" class="active">To-Do</a>
+    <a href="quiz.html">Quiz</a>
+  </nav>
+
+  <main>
+    <section>
+      <div class="todo-input">
+        <input id="todoInput" type="text" placeholder="Add a new task and press Enter" />
+        <button id="addTodoBtn">Add task</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat"><span class="num" id="statAll">0</span><span class="lbl">All</span></div>
+        <div class="stat"><span class="num" id="statOpen">0</span><span class="lbl">Open</span></div>
+        <div class="stat"><span class="num" id="statDone">0</span><span class="lbl">Done</span></div>
+      </div>
+
+      <div class="row between">
+        <div class="filters">
+          <button class="ghost active" data-filter="all">All</button>
+          <button class="ghost" data-filter="active">Active</button>
+          <button class="ghost" data-filter="completed">Completed</button>
+        </div>
+        <button class="ghost" id="clearCompletedBtn">Clear completed</button>
+      </div>
+
+      <ul id="todoList"></ul>
+    </section>
+  </main>
+
+  <footer><p>Built with plain JavaScript and DOM APIs.</p></footer>
+
+  <script src="todo.js"></script>
+</body>
+</html>

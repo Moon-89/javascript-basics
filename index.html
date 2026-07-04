@@ -3,56 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Core JavaScript Demos</title>
+  <title>JS Mini Apps Hub</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Core JavaScript Demos</h1>
-    <p>Interactive examples for variables, functions, DOM, events, arrays, objects, and async code.</p>
+    <span class="badge">Core JavaScript</span>
+    <h1>JS Mini Apps Hub</h1>
+    <p>Three small vanilla-JavaScript apps — variables, DOM, events, arrays, objects &amp; async.</p>
   </header>
 
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="counter.html">Counter</a>
+    <a href="todo.html">To-Do</a>
+    <a href="quiz.html">Quiz</a>
+  </nav>
+
   <main>
-    <section id="counter">
-      <h2>Counter Demo</h2>
-      <p>Track clicks with a simple counter and update the page.</p>
-      <div class="controls">
-        <button id="decreaseBtn">-</button>
-        <span id="countValue">0</span>
-        <button id="increaseBtn">+</button>
-      </div>
-      <p id="countMessage"></p>
+    <section>
+      <h2>Welcome 👋</h2>
+      <p class="hint">Each app lives on its own page with its own JavaScript file. No frameworks, no build step — plain JavaScript only. Pick one below to try it.</p>
     </section>
 
-    <section id="todo">
-      <h2>To-Do List Demo</h2>
-      <p>Use an array of objects to add, complete, and remove tasks.</p>
-      <div class="todo-input">
-        <input id="todoInput" type="text" placeholder="Add a new task" />
-        <button id="addTodoBtn">Add task</button>
-      </div>
-      <ul id="todoList"></ul>
-    </section>
+    <div class="card-grid">
+      <a class="card" href="counter.html">
+        <span class="icon">🔢</span>
+        <h3>Counter</h3>
+        <p>Adjustable step size, +/- controls, reset, and a live action-history log.</p>
+        <span class="open">Open Counter →</span>
+      </a>
 
-    <section id="quiz">
-      <h2>Quiz &amp; Async Demo</h2>
-      <p>Load a quiz question asynchronously using callbacks and promises.</p>
-      <div class="quiz-buttons">
-        <button id="loadQuizCallbackBtn">Load Question (Callback)</button>
-        <button id="loadQuizPromiseBtn">Load Question (Promise)</button>
-      </div>
-      <div id="quizArea">
-        <p id="quizQuestion">Press one button to load a question.</p>
-        <div id="quizAnswers"></div>
-      </div>
-      <div id="quizResult"></div>
-    </section>
+      <a class="card" href="todo.html">
+        <span class="icon">✅</span>
+        <h3>To-Do List</h3>
+        <p>Add, complete and remove tasks. Filters, live counts and localStorage persistence.</p>
+        <span class="open">Open To-Do →</span>
+      </a>
+
+      <a class="card" href="quiz.html">
+        <span class="icon">❓</span>
+        <h3>Quiz</h3>
+        <p>Answer four questions, watch the progress bar, get scored, and restart instantly.</p>
+        <span class="open">Open Quiz →</span>
+      </a>
+    </div>
   </main>
 
   <footer>
     <p>Built with plain JavaScript and DOM APIs.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

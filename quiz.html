@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz · JS Mini Apps Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <span class="badge">Demo 3</span>
+    <h1>Quiz</h1>
+    <p>Answer four questions, track your progress, and restart instantly.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="counter.html">Counter</a>
+    <a href="todo.html">To-Do</a>
+    <a href="quiz.html" class="active">Quiz</a>
+  </nav>
+
+  <main>
+    <section>
+      <div class="stats">
+        <div class="stat"><span class="num"><span id="answeredCount">0</span>/<span id="totalCount">0</span></span><span class="lbl">Answered</span></div>
+        <div class="stat"><span class="num" id="scoreCount">0</span><span class="lbl">Score</span></div>
+      </div>
+
+      <div class="progress"><span id="progressBar"></span></div>
+
+      <div id="questionsArea"></div>
+
+      <div class="row" style="margin-top: 1rem;">
+        <button id="submitBtn">Submit Quiz</button>
+        <button class="ghost" id="restartBtn">Restart</button>
+      </div>
+
+      <p id="resultMsg" class="hint"></p>
+    </section>
+  </main>
+
+  <footer><p>Built with plain JavaScript and DOM APIs.</p></footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Counter · JS Mini Apps Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <span class="badge">Demo 1</span>
+    <h1>Counter</h1>
+    <p>Track a number with adjustable steps and a visible action log.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="counter.html" class="active">Counter</a>
+    <a href="todo.html">To-Do</a>
+    <a href="quiz.html">Quiz</a>
+  </nav>
+
+  <main>
+    <section>
+      <div class="row between">
+        <div>
+          <label for="stepInput">Step size</label>
+          <input id="stepInput" type="number" value="1" min="1" style="width: 6rem;" />
+        </div>
+        <p id="statusMsg" class="hint">Last action: Ready</p>
+      </div>
+
+      <div class="controls" style="justify-content: center;">
+        <button id="decreaseBtn">− Step</button>
+        <button class="ghost" id="minusOneBtn">−1</button>
+        <span id="countValue">0</span>
+        <button class="ghost" id="plusOneBtn">+1</button>
+        <button id="increaseBtn">+ Step</button>
+      </div>
+
+      <div class="row" style="justify-content: center;">
+        <button class="danger" id="resetBtn">Reset to 0</button>
+      </div>
+
+      <p class="hint" style="text-align:center;">Tip: use ↑ / ↓ arrow keys to change by one step.</p>
+    </section>
+
+    <section>
+      <div class="row between">
+        <h2 style="margin:0;">Recent actions</h2>
+        <button class="ghost" id="clearLogBtn">Clear</button>
+      </div>
+      <ul class="log" id="actionLog"></ul>
+    </section>
+  </main>
+
+  <footer><p>Built with plain JavaScript and DOM APIs.</p></footer>
+
+  <script src="counter.js"></script>
+</body>
+</html>
